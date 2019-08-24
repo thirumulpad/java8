@@ -6,10 +6,10 @@ public class Singleton {
 	private String s;
 
 	private Singleton() {
-		s = "Hello I am a string part of Singleton class";
+		s = "aham bhramasmi";
 	}
 
-	public static Singleton getInstance() {
+	public static synchronized Singleton getInstance() {
 		if (singleton_instance == null) {
 			singleton_instance = new Singleton();
 		}
